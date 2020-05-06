@@ -80,7 +80,6 @@ function ReadFile {
 
    FVrows=${#FVcsv[@]}                                                     ;#The number of arrays is the row count
    FVcols+=`echo ${FVcsv[0]} | grep -c ","`                                ;#The number of commas plus one is the column count
-   printf "%s\n" "${FVcsv[@]}"
 
    #Count the priority categories
    for ((rows=0;rows<${FVrows};rows++)); do
@@ -158,15 +157,22 @@ function FixPriority {
          FVcsv[${rows}]=`echo ${temparray[${rows}]}","${temponethousands}`
          let "temponethousands+=1"
       elif [ ${TempInt} -le 3000 ];then
-         let "temptwothousands=${TempInit}+11000"
+         #Here it would be nice to fix the up stream problem
+         #of 3*** series numbers having a higher priority than 2*** series numbers
+         temptwothousands=`echo "$TempInt + 11000" | bc`
          FVcsv[${rows}]=`echo ${temparray[${rows}]}","${temptwothousands}`
       elif [ ${TempInt} -le 4000 ];then
-         let "tempthreethousands=${TempInit}+9000"
+         tempthreethousands=`echo "$TempInt + 9000" | bc`
          FVcsv[${rows}]=`echo ${temparray[${rows}]}","${tempthreethousands}`
       else
-         let "tempgtr4thousands=${TempInit}+10000"
+         tempgtr4thousands=`echo "$TempInt + 10000" | bc`
          FVcsv[${rows}]=`echo ${temparray[${rows}]}","${tempgtr4thousands}`
       fi
+      case ${debug} in
+       yes)
+          printf "%s\n" "${FVcsv[${rows}]}"
+          ;;
+      esac
    done
 
    #Update the Priority to the new value
@@ -176,8 +182,8 @@ function FixPriority {
 
    case ${debug} in
       yes)
-         #printf "%s\n" "${FVcsv[@]}"
-         printf "%s\n" "${FVcsv[@]}" > ./test\.csv
+         printf "%s\n" "${FVcsv[@]}"
+         #printf "%s\n" "${FVcsv[@]}" > ./test\.csv
          ;;
    esac
 
@@ -213,16 +219,16 @@ function WriteOutput {
          ;;
    esac
    
-   #Now sort the array by the tool assigned and then by the priority
+   #Now sort the array by the tool assigned (-k13) and then by the priority (-k11)
    FVcsv=()
    while read -r line
    do
       FVcsv+=("$line")
-   done < <(printf "%s\n" "${temparray[@]}" | sort -t"," -k13,13 -k11,11)
+   done < <(printf "%s\n" "${temparray[@]}" | sort -t"," -k13,13 -k11g)
 
    printf "%s\n" "${FVcsv[@]}" > ./test\.csv
    case ${debug} in
-      no)
+      yes)
          printf "%s\n" "${FVcsv[@]}" 
    esac
 }

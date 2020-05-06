@@ -1,13 +1,13 @@
-0,0,17942855,Customer02 Memory,DQPMAV1ZCCB1,DQPMA,Inspection Prepell Staging,Attenuated,0,14.2,213,2020/04/13,0,1586815200,0
-0,1-3A 1-1C,9208157,Customer03 – Israel (Fab 2),B4462C5RA13H4,B4462,Inspection Prepell Die to Data,Attenuated,0,0.9,1059,2020/04/15,0,1586988000,0
-0,CTC needs debris in corner removed,16456664,Customer01 – Austin TX,S14G2300Y2,SSM5511X01,Inspection Postpell Die to Data + Contam,OMOG,0,3,2,2020/04/16,INSP07,1587074400,0
-0,0,17944012,Customer04 – Taiwan (Fab 3A),TDM1151BLBP1,TDM115,Inspection Postpell Die To Data + Contam,Attenuated,0,35.4,212,2020/04/17,0,1587160800,0
-0,0,16456666,Customer01 – Austin TX,S14G240056,S5M5511X01,Inspection Prepell Surface,OMOG,0,0.5,206,2020/04/17,INSP07,1587160800,0
-0,0,16456665,Customer01 – Austin TX,S14G2350Q6,S4M5511X01,Inspection Postpell Die To Data + Contam,OMOG,0,1.8,207,2020/04/17,INSP07,1587160800,0
-0,0,16456667,Customer01 – Austin TX,S14G2450Q3,S5M5511X01,Inspection Postpell Die To Data + Contam,OMOG,0,0.1,209,2020/04/18,INSP07,1587247200,0
-0,0,17943782,Customer04 – Taiwan (Fab 3A),DK103AX60S1E,DK103AX,Inspection Prepell Die to Die,Attenuated,0,0.1,214,2020/04/19,0,1587333600,0
-0,0,22048605,Customer05,P20JAM1002,JAYA OPTICAL,Inspection Prepell Staging,OMOG,0,21.9,1046,2020/04/23,INSP07,1587679200,0
-0,0,12723241,Customer06 – Belgium,RIGELCONT10A,RIGEL,Inspection Postpell Contamination,Attenuated,0,4.5,1047,2020/04/24,0,1587765600,0
-0,[Apps][GR][Ursa Nuisance Testing – Product],22046592,Customer07 – Bosie,S14G2250R7,S4LR059X01,Inspection Initial Staging,OMOG,0,7.3,3116,2020/05/01,INSP07,1588370400,0
-0,[Litho][DC][Customer01 FEOL HVM],22048281,Customer07 – Bosie,S14G0100F2,S5E7884X01,Inspection Postpell Contamination,OMOG,0,19.5,3287,2020/05/15,INSP07,1589580000,0
-0,[Litho][DC][Customer01 FEOL HVM],22048481,Customer07 – Bosie,S14G0500K2,SFK11T1X01,Inspection Postpell Contamination,Attenuated,0,28.9,3274,1899-12-30,0,1,0
+0,0,17942855,Customer02 Memory,DQPMAV1ZCCB1,DQPMA,Inspection Prepell Staging,Attenuated,0,14.2,213,2020/04/13,0,1586815200
+0,1-3A 1-1C,9208157,Customer03 – Israel (Fab 2),B4462C5RA13H4,B4462,Inspection Prepell Die to Data,Attenuated,0,0.9,1059,2020/04/15,0,1586988000
+0,CTC needs debris in corner removed,16456664,Customer01 – Austin TX,S14G2300Y2,SSM5511X01,Inspection Postpell Die to Data + Contam,OMOG,0,3,2,2020/04/16,INSP07,1587074400
+0,0,17944012,Customer04 – Taiwan (Fab 3A),TDM1151BLBP1,TDM115,Inspection Postpell Die To Data + Contam,Attenuated,0,35.4,212,2020/04/17,0,1587160800
+0,0,16456666,Customer01 – Austin TX,S14G240056,S5M5511X01,Inspection Prepell Surface,OMOG,0,0.5,206,2020/04/17,INSP07,1587160800
+0,0,16456665,Customer01 – Austin TX,S14G2350Q6,S4M5511X01,Inspection Postpell Die To Data + Contam,OMOG,0,1.8,207,2020/04/17,INSP07,1587160800
+0,0,16456667,Customer01 – Austin TX,S14G2450Q3,S5M5511X01,Inspection Postpell Die To Data + Contam,OMOG,0,0.1,209,2020/04/18,INSP07,1587247200
+0,0,17943782,Customer04 – Taiwan (Fab 3A),DK103AX60S1E,DK103AX,Inspection Prepell Die to Die,Attenuated,0,0.1,214,2020/04/19,0,1587333600
+0,0,22048605,Customer05,P20JAM1002,JAYA OPTICAL,Inspection Prepell Staging,OMOG,0,21.9,1046,2020/04/23,INSP07,1587679200
+0,0,12723241,Customer06 – Belgium,RIGELCONT10A,RIGEL,Inspection Postpell Contamination,Attenuated,0,4.5,1047,2020/04/24,0,1587765600
+0,[Apps][GR][Ursa Nuisance Testing – Product],22046592,Customer07 – Bosie,S14G2250R7,S4LR059X01,Inspection Initial Staging,OMOG,0,7.3,3116,2020/05/01,INSP07,1588370400
+0,[Litho][DC][Customer01 FEOL HVM],22048281,Customer07 – Bosie,S14G0100F2,S5E7884X01,Inspection Postpell Contamination,OMOG,0,19.5,3287,2020/05/15,INSP07,1589580000
+0,[Litho][DC][Customer01 FEOL HVM],22048481,Customer07 – Bosie,S14G0500K2,SFK11T1X01,Inspection Postpell Contamination,Attenuated,0,28.9,3274,1899-12-30,0,1
